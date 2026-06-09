@@ -1,4 +1,4 @@
-command: "if [ -x ./.venv/bin/python ]; then ./.venv/bin/python ./ai_limits.py; else /usr/bin/env python3 ./ai_limits.py; fi"
+command: 'WIDGET_DIR="$HOME/Library/Application Support/Übersicht/widgets/ai-limits.widget"; cd "$WIDGET_DIR" && if [ -x ./.venv/bin/python ]; then ./.venv/bin/python ./ai_limits.py; else /usr/bin/env python3 ./ai_limits.py; fi'
 
 refreshFrequency: "60s"
 
