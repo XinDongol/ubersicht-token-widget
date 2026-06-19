@@ -106,6 +106,14 @@ cd "$HOME/Library/Application Support/Übersicht/widgets/ai-limits.widget"
 ./.venv/bin/python -m pip install -r requirements.txt
 ```
 
+If macOS repeatedly asks for the keychain password for `Claude Safe Storage`, grant persistent access to the local keychain item:
+
+```bash
+./fix-claude-keychain.sh
+```
+
+Run this once per Mac. The script does not store your password; it only updates the access control on that Mac's existing Claude keychain item.
+
 If Claude Code session totals are missing:
 
 ```bash

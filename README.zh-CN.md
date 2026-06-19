@@ -106,6 +106,14 @@ cd "$HOME/Library/Application Support/Übersicht/widgets/ai-limits.widget"
 ./.venv/bin/python -m pip install -r requirements.txt
 ```
 
+如果 macOS 反复弹出 `Claude Safe Storage` 的钥匙串密码提示，给本机钥匙串条目设置持久访问权限：
+
+```bash
+./fix-claude-keychain.sh
+```
+
+每台 Mac 只需要运行一次。这个脚本不会保存你的密码，只会更新当前 Mac 上已有 Claude 钥匙串条目的访问控制。
+
 如果 Claude Code session token 不显示：
 
 ```bash
